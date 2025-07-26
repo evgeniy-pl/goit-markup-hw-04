@@ -36,7 +36,7 @@ p {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  outline: solid red;
+  /* outline: solid red; */
   padding: 0 15px;
 }
 
@@ -51,6 +51,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1 66, 0.08;
 }
 
 .header-container {
@@ -97,6 +99,18 @@ img {
   color: #2e2f42;
   text-decoration: none;
   padding: 24px 0;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* color: #404bbf; */
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus,
+.nav-list-link:active,
+.address-list-link:hover,
+.address-list-link:focus,
+.address-list-link:active {
+  color: #404bbf;
 }
 
 .header-address {
@@ -112,20 +126,12 @@ img {
 }
 
 .address-list-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
-}
-
-.nav-header-list-link:hover,
-.nav-header-list-link:focus,
-.nav-header-list-link:active,
-.address-list-link:hover,
-.address-list-link:focus,
-.address-list-link:active {
-  color: #404bbf;
 }
 
 /* Hero */
@@ -323,8 +329,6 @@ img {
 /* Portfolio */
 
 .portfolio {
-  /* background-color: #ffffff; */
-  /* padding-top: 120px; */
   padding-top: 120px;
   padding-bottom: 120px;
 }
